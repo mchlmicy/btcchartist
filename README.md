@@ -1,7 +1,9 @@
 # btcchartist
 Precursor to Launchpad, the first cryptochart service for your phone.
 
-<img src="https://github.com/mchlmicy/btcchartist/blob/master/screenshot.jpg" alt="Demo" width="100%" border="10" />
+<div style="text-align:center; width: 100%">
+   <img src="https://github.com/mchlmicy/btcchartist/blob/master/screenshot.jpg" alt="Demo" width="50%" border="10" style="display: inline-block"/>
+</div>
 
 **Description:** Summer project I built with @patrick7kelly.
 
