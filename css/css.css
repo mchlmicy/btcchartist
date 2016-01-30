@@ -1,0 +1,164 @@
+desktop
+{	display: inherit;
+}
+desktoptablet
+{	display: inherit;
+}
+mobile
+{	display: none;
+}
+mobiletablet
+{	display: none;
+}
+tablet
+{	display: none;
+}
+
+ul.dropdown-menu
+{	z-index: 1;
+}
+
+.top
+{	margin-bottom: 30px;
+	margin-top: 60px;
+}
+
+.pull-center
+{	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pull-left
+{	margin-left: 0px;
+}
+.pull-right
+{	margin-right: 0px;
+}
+
+a.modal-custom
+{	cursor: pointer;
+}
+a.modal-custom:hover,
+a.modal-custom:focus,
+a.modal-custom:active
+{	color: inherit;
+	text-decoration: none;
+}
+
+/* Tables */
+td.negative
+{	background-color: rgba(64,0,0,.5);
+}
+td.negative:hover,
+td.negative:focus,
+td.negative:active
+{	background-color: rgba(64,0,0,.6);
+}
+td.positive
+{	background-color: rgba(0,64,0,.5);
+}
+td.positive:hover,
+td.positive:focus,
+td.positive:active
+{	background-color: rgba(0,64,0,.6);
+}
+
+/* Links */
+a.link-bright
+{	color: #53aefc;
+}
+a.link-bright:hover,
+a.link-bright:focus,
+a.link-bright:active
+{	color: #3886c9;
+}
+a.link-colorinherit
+{	color: inherit;
+}
+a.link-colorinherit:hover,
+a.link-colorinherit:focus,
+a.link-colorinherit:active
+{	color: inherit;
+}
+a.link-drkgray
+{	color: #555555;
+}
+a.link-drkgray:hover,
+a.link-drkgray:focus,
+a.link-drkgray:active
+{	color: #303030;
+}
+a.link-muted
+{	color: #999999;
+}
+a.link-muted:hover,
+a.link-muted:focus,
+a.link-muted:active
+{	color: #808080;
+}
+a.link-nounderline:hover,
+a.link-nounderline:focus
+{	text-decoration: none;
+}
+
+@media all and (max-width: 767px)
+{
+	desktop
+	{	display: none;
+	}
+	desktoptablet
+	{	display: none;
+	}
+	mobile
+	{	display: inherit;
+	}
+	mobiletablet
+	{	display: inherit;
+	}
+	tablet
+	{	display: none;
+	}	
+	
+	.container
+	{ 	margin: 0px -21px;
+	}
+}
+
+
+@media all and (min-width: 768px) and (max-width: 992px)
+{
+	desktop
+	{	display: none;
+	}
+	desktoptablet
+	{	display: inherit;
+	}
+	mobile
+	{	display: none;
+	}
+	mobiletablet
+	{	display: inherit;
+	}
+	tablet
+	{	display: inherit;
+	}
+}
+
+@media all and (min-width: 992px)
+{
+	desktop
+	{	display: inherit;
+	}
+	desktoptablet
+	{	display: inherit;
+	}
+	mobile
+	{	display: none;
+	}
+	mobiletablet
+	{	display: none;
+	}
+	tablet
+	{	display: none;
+	}
+}

@@ -1,0 +1,54 @@
+/* Trade-Value Label */
+a.trade-value:hover,
+a.trade-value:focus,
+a.trade-value:active
+{	background-color: #777;
+	color: #ffffff;
+}
+
+.loading img 
+{	display: inline-block;
+	left: 0px;
+	position:relative;
+	top: -2px;
+	
+	/* Chrome, Safari, Opera */
+	-webkit-animation-name: coinroll;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: .5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+	
+	/* Standard syntax */
+	animation-name: coinroll;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: .5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: running;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes coinroll
+{
+	0%	
+	{	left: 0px;  
+	}
+	100% 
+	{	left: 60px; 
+		-webkit-transform: rotate(360deg);
+	}
+}
+/* Standard syntax */
+@keyframes coinroll
+{
+	0%	
+	{	left: 0px;  
+	}
+	100% 
+	{	left: 60px; 
+		-webkit-transform: rotate(360deg);
+	}
+}
