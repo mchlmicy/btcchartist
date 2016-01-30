@@ -1,5 +1,5 @@
 # btcchartist
-Precursor to Launchpad, the first cryptochart service for your phone.
+Track the Bitcoin price, orderbook across multiple exchanges on your iPhone's lockscreen.
 
 <img src="https://github.com/mchlmicy/btcchartist/blob/master/screenshot.jpg" alt="Demo" width="50%" border="10" />
 
