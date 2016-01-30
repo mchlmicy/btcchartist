@@ -9,4 +9,4 @@ Precursor to Launchpad, the first cryptochart service for your phone.
 
 **Features:** Can swap out data for multiple exchanges, progressive data loading (maybe?), and orderbook views.
 
-**Notes:** Unfortunately no videos of this project exist. ¯\_(ツ)_/¯
+**Notes:** Unfortunately no videos of this project exist. ¯\\_(ツ)_/¯
