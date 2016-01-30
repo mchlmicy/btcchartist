@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Bitcoin</title>
+  		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 		
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+        <script src="http://js.pusher.com/2.2/pusher.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>  
+    </head>
+	<body>
+    	<div class="container" style="background-color: #ffffff">
+        	<div class="row-fluid"> 
+            	<div class="col-xs-8">
+                	<h3>Bitstamp</h3>
+               	</div>
+                <div class="col-xs-4">
+                 	<h3><div class="pull-right" id="current_badges">Loading...</div></h3> 
+                </div> 
+                <hr/>  
+            </div>
+            <div class="row-fluid">
+            	<div class="col-sm-12" id="graph"></div>
+            </div> 
+            <div class="row-fluid">
+            	<div class="col-xs-12" id="chart"></div>
+          	</div>
+       	</div>
+		<script type="text/javascript">
+			var pusher = new Pusher('de504dc5763aeef9ff52');
+			var order_book_channel = pusher.subscribe('order_book');
+
+			order_book_channel.bind('data', function(data) 
+			{
+    			$('#chart').html('<table class="table table-striped"><thead><tr><th colspan="2"><center>Bids</center></th><th><center>|</center></th><th colspan="2"><center>Asks</center></th></tr></thead><tbody></tbody></table>');
+				
+				for(i=0;i<data['bids'].length;i++) 
+				{
+					//If there corresponding ask data...
+					if(data['asks'].length>=i)
+					{
+						$('#chart tbody').append('<tr><td style="text-align: left">' + data['bids'][i][0] + '</td><td style="text-align: right">' + (Math.round(data['bids'][i][1]*100000)/100000) + '</td><td><center>|</center></td><td style="text-align: left">' + data['asks'][i][0] + '</td><td style="text-align: right">' + (Math.round(data['asks'][i][1]*100000)/100000) + '</td></tr>');
+					}
+					
+					//If this is the last data point...
+					if(data['bids'].length-1==i)
+					{
+						$('#current_badges').html('<span class="label label-success" style="margin-right: 19px">$' + (Math.round(data['bids'][i][0]*100000)/100000) + '<\/span><span class="label label-danger">$' + (Math.round(data['asks'][i][0]*100000)/100000) + '</span>');
+					} 
+				}
+			});
+		</script>	 
+        <script src="js/chart.js"></script>
+        <script src="js/highcharts.js"></script>
+	</body>
+</html>
