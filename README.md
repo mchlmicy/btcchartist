@@ -1,9 +1,8 @@
 # btcchartist
 Track the Bitcoin price, orderbook across multiple exchanges on your iPhone's lockscreen.
 
-<img src="https://github.com/mchlmicy/btcchartist/blob/master/screenshot_01.jpg" alt="Default view" width="50%" border="10" />
-<img src="https://github.com/mchlmicy/btcchartist/blob/master/screenshot_02.jpg" alt="Split H/L" width="50%" border="10" />
-<img src="https://github.com/mchlmicy/btcchartist/blob/master/screenshot_03.jpg" alt="Timeline Scrubbing" width="50%" border="10" />
+<img src="https://github.com/mchlmicy/btcchartist/blob/master/screenshot_01.jpg" alt="Default view" width="45%" border="10" />
+<img src="https://github.com/mchlmicy/btcchartist/blob/master/screenshot_02.jpg" alt="Split H/L" width="45%" border="10" />
 
 **Description:** Summer project I built with @patrick7kelly.
 
